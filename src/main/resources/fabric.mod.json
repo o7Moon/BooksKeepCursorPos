@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "bookskeepcursorpos",
+  "version": "${version}",
+  "name": "Books Keep Cursor Pos :)",
+  "description": "makes cursor pos save between opening book guis",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bookskeepcursorpos/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.o7moon.bookskeepcursorpos.client.BookskeepcursorposClient"
+    ],
+    "main": [
+      "dev.o7moon.bookskeepcursorpos.Bookskeepcursorpos"
+    ]
+  },
+  "mixins": [
+    "bookskeepcursorpos.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version_range}"
+  },
+  "accessWidener": "bookskeepcursorpos.accesswidener"
+}
